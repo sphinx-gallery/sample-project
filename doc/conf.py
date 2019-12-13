@@ -13,6 +13,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import SampleModule
 from sphinx_gallery.sorting import FileNameSortKey
 
 
@@ -32,6 +33,7 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.autodoc',
     'sphinx_gallery.gen_gallery',
     ]
 
@@ -64,5 +66,9 @@ sphinx_gallery_conf = {
     'gallery_dirs': ['auto_gallery-1', 'auto_gallery-2'],
     # specify the order of examples to be according to filename
     'within_subsection_order': FileNameSortKey,
-
+    # directory where function granular galleries are stored
+    'backreferences_dir': 'gen_modules/backreferences',
+    # Modules for which function level galleries are created.  In
+    # this case sphinx_gallery and numpy in a tuple of strings.
+    'doc_module': ('SampleModule'),
 }
