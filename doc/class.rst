@@ -1,7 +1,8 @@
 Module classes
 ==============
 
-Classes can module are documented below using ``sphinx.ext.autodoc``:
+Classes have been documented using ``sphinx.ext.autodoc`` and the docstring
+style extension 'sphinx.ext.napoleon':
 
 .. autoclass:: SampleModule.module.class_power
 

@@ -14,8 +14,8 @@ to document your module.
    :caption: Contents:
 
    getting_started
-   class
    function
+   class
 
 .. toctree::
    :maxdepth: 2

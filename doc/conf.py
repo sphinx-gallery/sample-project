@@ -13,9 +13,9 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import sys
 import SampleModule
 from sphinx_gallery.sorting import FileNameSortKey
-
 
 # -- Project information -----------------------------------------------------
 
@@ -35,6 +35,8 @@ release = '0.0.1'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx_gallery.gen_gallery',
+    'sphinx.ext.napoleon',
+    'sphinx.ext.intersphinx',
     ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -71,4 +73,11 @@ sphinx_gallery_conf = {
     # Modules for which function level galleries are created.  In
     # this case sphinx_gallery and numpy in a tuple of strings.
     'doc_module': ('SampleModule'),
+}
+
+# configuration for intersphinx: refer to the Python standard library.
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/{.major}'.format(sys.version_info), None),
+    'matplotlib': ('https://matplotlib.org/', None),
+    'pandas': ('https://pandas.pydata.org/', None),
 }
