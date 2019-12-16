@@ -7,8 +7,9 @@ our package 'SampleModule'.
 """
 
 import SampleModule.module
+from SampleModule.module import fun_power
 
-SampleModule.module.fun_power(2,3)
+fun_power(2,3)
 
 #%%
 # The function ``power`` returns the first number raised to the power of the
