@@ -131,7 +131,7 @@ def download_data(url, data_file_name, data_key, data_path=None,
 
     config_path = _get_config_path(config_path)
     config_file = os.path.join(config_path, 'sg_template_config.json')
-    if not op.isfile(config_file):
+    if not os.path.isfile(config_file):
         config = {}
     else:
         config = _load_config(config_path)
