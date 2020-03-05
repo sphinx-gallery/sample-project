@@ -20,7 +20,7 @@ from sphinx_gallery.sorting import FileNameSortKey
 # -- Project information -----------------------------------------------------
 
 project = 'sample-project'
-copyright = '2019, <Author>'
+copyright = '2020, <Author>'
 author = '<Author>'
 
 # The full version, including alpha/beta/rc tags

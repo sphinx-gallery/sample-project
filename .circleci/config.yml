@@ -10,10 +10,9 @@ jobs:
           command: |
             python3 -m venv doc-env
             . doc-env/bin/activate
-            pip install -r requirements.txt --progress-bar off
-            pip install sphinx sphinx-gallery sphinx_rtd_theme pandas matplotlib --progress-bar off
+            pip install -r requirements_doc.txt --progress-bar off
             pip install .
-            cd doc
+            cd docs
             make html
       - store_artifacts:
           path: doc/_build/html
