@@ -10,10 +10,12 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
 import sys
+from pathlib import Path
+
+# find project
+sys.path.insert(0, str(Path(__file__).parents[1]))
+
 import SampleModule
 from sphinx_gallery.sorting import FileNameSortKey
 
