@@ -60,7 +60,7 @@ html_theme = 'sphinx_rtd_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# html_static_path = ['_static']
 
 # sphinx-gallery configuration
 sphinx_gallery_conf = {
@@ -80,6 +80,6 @@ sphinx_gallery_conf = {
 # configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
     'python': ('https://docs.python.org/{.major}'.format(sys.version_info), None),
-    'matplotlib': ('https://matplotlib.org/', None),
-    'pandas': ('https://pandas.pydata.org/', None),
+    'matplotlib': ('https://matplotlib.org/stable/', None),
+    'pandas': ('https://pandas.pydata.org/pandas-docs/stable/', None),
 }

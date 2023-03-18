@@ -20,4 +20,8 @@ df = pd.DataFrame({'col1': [1,2,3],
                    'col2': [4,5,6]})
 df
 
-s = pd.Series([1,2,3])
+#%%
+# pandas series don't have a html representation, so the text representation
+# is captured:
+
+pd.Series([1,2,3])
